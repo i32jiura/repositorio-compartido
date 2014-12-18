@@ -16,3 +16,6 @@ Agenda::~Agenda() {
 	// TODO Auto-generated destructor stub
 }
 
+void Agenda::ordenarFichero() {
+
+}
