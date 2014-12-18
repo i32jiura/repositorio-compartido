@@ -41,7 +41,7 @@ Agenda::Buscarporapellido() {
 
 					else  {
 
-						cout << "Se encuentra en la bd. \n"
+						cout << "Se encuentra en la bd. \n";
 
 						}
 					}
