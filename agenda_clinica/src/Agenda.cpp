@@ -6,6 +6,7 @@
  */
 
 #include "Agenda.h"
+#include <fstream>
 
 Agenda::Agenda() {
 	// TODO Auto-generated constructor stub
