@@ -22,27 +22,32 @@ Agenda::~Agenda() {
 Agenda::Buscarporapellido() {
 
 	string apellido;
-	string Agenda;
+	string ficheroAgenda("Agenda.txt");
+	string agenda;
 
 	cout << "Introduce el apellido a buscar";
 	cin >> apellido;
 
 	cout << "\n";
 
-	Agenda.open("Agenda.txt");
+	while (getline(ficheroAgenda,agenda,', ')){
+		while (getline(ficheroAgenda,agenda,', ')){
+			while (getline(ficheroAgenda,agenda,', ')){
 
-	if(apellido != ""){
+					if(apellido != agenda){
+						cout << "El nombre a buscar no se encuentra registrado en la base de datos. \n";
 
+					}
 
-		cout << "No existe ningun usuario con ese apellido registrado en nuestra agenda. \n";
+					else  {
 
-	}
+						cout << "Se encuentra en la bd. \n"
 
-	else {
+						}
+					}
 
-		cout << "El usuario con apellido " << apellido << "se encuentra en el sistema \n";
-	}
+			}
 
-
+		}
 
 }
