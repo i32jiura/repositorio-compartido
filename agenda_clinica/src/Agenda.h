@@ -24,6 +24,7 @@ public:
 	virtual ~Agenda();
 
 	void importarCopia();
+	void imprimir();
 };
 
 #endif /* AGENDA_H_ */

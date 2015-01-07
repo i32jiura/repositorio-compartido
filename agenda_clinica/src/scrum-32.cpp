@@ -15,7 +15,7 @@ int main() {
 
 	Agenda agenda;
 
-	agenda.importarCopia();
+	agenda.imprimir();
 
 	return 0;
 

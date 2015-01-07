@@ -9,8 +9,11 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <iomanip>
+
 
 using namespace std;
+
 
 Agenda::Agenda() {
 	// TODO Auto-generated constructor stub
@@ -42,8 +45,10 @@ void Agenda::importarCopia() {
 
 	// Comprobamos que el archivo se ha abierto correctamente
 	if (!ficheroCopia) {
-		cout << "Ocurrió un error cuando se intentaba acceder a la copia de seguridad." << endl;
-		exit(-1);
+		cout
+				<< "Ocurrió un error cuando se intentaba acceder a la copia de seguridad."
+				<< endl;
+		//exit(-1);
 	}
 
 	// Abrimos el fichero de la agenda en modo escritura, para escribir al fianl del fichero
@@ -51,8 +56,10 @@ void Agenda::importarCopia() {
 
 	// Comprobamos que el archivo se ha abierto correctamente
 	if (!ficheroAgendaW) {
-		cout << "Ocurrió un error cuando se intentaba acceder a la agenda modo escritura." << endl;
-		exit(-1);
+		cout
+				<< "Ocurrió un error cuando se intentaba acceder a la agenda modo escritura."
+				<< endl;
+		//exit(-1);
 	}
 
 	// Recorremos los ficheros para encontrar duplucados e insertarlos.
@@ -66,8 +73,9 @@ void Agenda::importarCopia() {
 
 		// Comprobamos que el archivo se ha abierto correctamente
 		if (!ficheroAgendaR) {
-			cout << "Ocurrió un error cuando se intentaba acceder a la agenda." << endl;
-			exit(-1);
+			cout << "Ocurrió un error cuando se intentaba acceder a la agenda."
+					<< endl;
+			//exit(-1);
 		}
 
 		// Recorremos el fichero de la agenda para comparar con los datos de la copia de seguridad.
@@ -102,3 +110,39 @@ void Agenda::importarCopia() {
 	ficheroAgendaW.close();
 
 }
+
+void Agenda::imprimir() {
+
+
+	ifstream ficheroAgendaR;
+	string lineaAgenda;
+
+	// Abrimos el archivo de la Agenda en modo lectura.
+	ficheroAgendaR.open("Agenda.txt");
+
+	// Comprobamos que el archivo se ha abierto correctamente
+	if (!ficheroAgendaR) {
+		cout << "Ocurrió un error cuando se intentaba acceder a la agenda."
+				<< endl;
+		//exit(-1);
+	}
+
+	// Formateado para mejor visuacizacion
+	cout << "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+	cout << "DNI" << setw(30) << "NOMBRE" << setw(30) << "APELLIDOS" << setw(30) << "DIRECCION" << setw(30) << "TELEFONO" << setw(30) << "EMAIL" << setw(30) << "ANOTACIONES" << setw(30) <<  "FAVORITO" << setw(30) << "RED SOCIAL" << setw(30) << "MAS USADO\n";
+	cout << "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+
+	// Recorremos el fichero de la agenda.
+	while (getline(ficheroAgendaR, lineaAgenda, ',')) {
+
+		cout << lineaAgenda << " " << setw(27 - lineaAgenda.size()) << " ";
+	}
+
+	// Formateado para mejor visuacizacion
+	cout << "\n---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+
+	// Cerramos el fichero de agenda en modo lectura.
+	ficheroAgendaR.close();
+
+}
+
