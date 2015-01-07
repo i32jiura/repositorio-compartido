@@ -1,5 +1,5 @@
 /*
- * pacientes.cpp
+ * Pacientes.cpp
  *
  *  Created on: 04/12/2014
  *      Author: i32ribaj
@@ -7,44 +7,44 @@
 
 #include "pacientes.h"
 
-pacientes::pacientes() {
+Pacientes::Pacientes() {
 	// TODO Auto-generated constructor stub
 	telefono_ = 0;
 }
 
-const std::string& pacientes::getApellidos() const {
+const std::string& Pacientes::getApellidos() const {
 	return apellidos_;
 }
 
-void pacientes::setApellidos(const std::string& apellidos) {
+void Pacientes::setApellidos(const std::string& apellidos) {
 	apellidos_ = apellidos;
 }
 
-const std::string& pacientes::getDni() const {
+const std::string& Pacientes::getDni() const {
 	return DNI_;
 }
 
-void pacientes::setDni(const std::string& dni) {
+void Pacientes::setDni(const std::string& dni) {
 	DNI_ = dni;
 }
 
-const std::string& pacientes::getNombre() const {
+const std::string& Pacientes::getNombre() const {
 	return nombre_;
 }
 
-void pacientes::setNombre(const std::string& nombre) {
+void Pacientes::setNombre(const std::string& nombre) {
 	nombre_ = nombre;
 }
 
-int pacientes::getTelefono() const {
+int Pacientes::getTelefono() const {
 	return telefono_;
 }
 
-void pacientes::setTelefono(int telefono) {
+void Pacientes::setTelefono(int telefono) {
 	telefono_ = telefono;
 }
 
-pacientes::~pacientes() {
+Pacientes::~Pacientes() {
 	// TODO Auto-generated destructor stub
 }
 

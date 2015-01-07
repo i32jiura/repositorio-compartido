@@ -10,7 +10,7 @@
 
 #include <string>
 
-class pacientes {
+class Pacientes {
 
 private:
 	std::string nombre_;
@@ -19,8 +19,8 @@ private:
 	int telefono_;
 
 public:
-	pacientes();
-	virtual ~pacientes();
+	Pacientes();
+	virtual ~Pacientes();
 	const std::string& getApellidos() const;
 	void setApellidos(const std::string& apellidos);
 	const std::string& getDni() const;

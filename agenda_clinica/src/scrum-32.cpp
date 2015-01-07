@@ -7,13 +7,15 @@
 //============================================================================
 
 #include <iostream>
+#include "Agenda.h"
+
 using namespace std;
 
 int main() {
 
-	cout << "Hello cambio1" << endl; // prints !!!Hello World!!!
-	cout << "Hello oliii" << endl; // prints !!!Hello World!!!
-	cout << "Hola locos" << endl; // prints !!!Hello World!!!
+	Agenda agenda;
+
+	agenda.importarCopia();
 
 	return 0;
 

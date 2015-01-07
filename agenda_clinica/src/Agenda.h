@@ -9,16 +9,21 @@
 #define AGENDA_H_
 
 #include <list>
+#include "pacientes.h"
+
+using namespace std;
 
 class Agenda {
 
 private:
-	std::list<pacientes> listaContactos_;
+	list<Pacientes> listaContactos_;
 
 
 public:
 	Agenda();
 	virtual ~Agenda();
+
+	void importarCopia();
 };
 
 #endif /* AGENDA_H_ */
