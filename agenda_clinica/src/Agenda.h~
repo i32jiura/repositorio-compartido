@@ -9,7 +9,7 @@
 #define AGENDA_H_
 
 #include <list>
-#include "Pacientes.h"
+#include "pacientes.h"
 
 using namespace std;
 
@@ -25,14 +25,11 @@ public:
 	Agenda();
 	virtual ~Agenda();
 
-
-
-	void ordenarFichero();
 	void introducirPaciente(Pacientes p);
-	bool borrarPaciente(const std::string& apellidos);
+	void borrarPaciente(const std::string& apellidos);
+
 	void importarCopia();
 	void imprimir();
-
 };
 
 #endif /* AGENDA_H_ */

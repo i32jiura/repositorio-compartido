@@ -6,23 +6,23 @@
 CPP_SRCS += \
 ../src/Agenda.cpp \
 ../src/Agenda_test.cpp \
-../src/pacientes.cpp \
-../src/pacientes_test.cpp \
-../src/scrum-32.cpp 
+../src/Menu.cpp \
+../src/Pacientes.cpp \
+../src/Pacientes_test.cpp 
 
 OBJS += \
 ./src/Agenda.o \
 ./src/Agenda_test.o \
-./src/pacientes.o \
-./src/pacientes_test.o \
-./src/scrum-32.o 
+./src/Menu.o \
+./src/Pacientes.o \
+./src/Pacientes_test.o 
 
 CPP_DEPS += \
 ./src/Agenda.d \
 ./src/Agenda_test.d \
-./src/pacientes.d \
-./src/pacientes_test.d \
-./src/scrum-32.d 
+./src/Menu.d \
+./src/Pacientes.d \
+./src/Pacientes_test.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
