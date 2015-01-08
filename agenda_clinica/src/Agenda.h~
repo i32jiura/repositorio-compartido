@@ -26,7 +26,7 @@ public:
 	virtual ~Agenda();
 
 	void introducirPaciente(Pacientes p);
-	bool borrarPaciente(const std::string& apellidos);
+	void borrarPaciente(const std::string& apellidos);
 
 	void importarCopia();
 	void imprimir();
