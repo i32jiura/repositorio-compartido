@@ -1,0 +1,125 @@
+16:44:55 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o  ./src/Agenda.d ./src/Agenda_test.d ./src/pacientes.d ./src/pacientes_test.d ./src/scrum-32.d  scrum-32
+ 
+16:44:55 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
+Finished building: ../src/Agenda_test.cpp
+ 
+Building file: ../src/pacientes.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes.d" -MT"src/pacientes.d" -o "src/pacientes.o" "../src/pacientes.cpp"
+Finished building: ../src/pacientes.cpp
+ 
+Building file: ../src/pacientes_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes_test.d" -MT"src/pacientes_test.d" -o "src/pacientes_test.o" "../src/pacientes_test.cpp"
+Finished building: ../src/pacientes_test.cpp
+ 
+Building file: ../src/scrum-32.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/scrum-32.d" -MT"src/scrum-32.d" -o "src/scrum-32.o" "../src/scrum-32.cpp"
+Finished building: ../src/scrum-32.cpp
+ 
+Building target: agenda_clinica
+Invoking: Cross G++ Linker
+g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
+Finished building target: agenda_clinica
+ 
+16:45:50 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: No se hace nada para `all'.
+16:52:39 **** Build of configuration Debug for project scrum-32 ****
+make all 
+Building target: scrum-32
+Invoking: Cross G++ Linker
+g++  -o "scrum-32"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
+Finished building target: scrum-32
+ 
+16:54:35 **** Incremental Build of configuration Debug for project scrum-32 ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
+Finished building: ../src/Agenda_test.cpp
+ 
+Building file: ../src/pacientes.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes.d" -MT"src/pacientes.d" -o "src/pacientes.o" "../src/pacientes.cpp"
+Finished building: ../src/pacientes.cpp
+ 
+Building file: ../src/pacientes_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes_test.d" -MT"src/pacientes_test.d" -o "src/pacientes_test.o" "../src/pacientes_test.cpp"
+Finished building: ../src/pacientes_test.cpp
+ 
+Building file: ../src/scrum-32.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/scrum-32.d" -MT"src/scrum-32.d" -o "src/scrum-32.o" "../src/scrum-32.cpp"
+Finished building: ../src/scrum-32.cpp
+ 
+Building target: scrum-32
+Invoking: Cross G++ Linker
+g++  -o "scrum-32"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
+Finished building target: scrum-32
+ 
+16:55:11 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o  ./src/Agenda.d ./src/Agenda_test.d ./src/pacientes.d ./src/pacientes_test.d ./src/scrum-32.d  scrum-32
+ 
+16:55:12 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+make: No se hace nada para `all'.
+16:56:42 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o  ./src/Agenda.d ./src/Agenda_test.d ./src/pacientes.d ./src/pacientes_test.d ./src/scrum-32.d  agenda_clinica
+ 
+16:57:07 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o  ./src/Agenda.d ./src/Agenda_test.d ./src/pacientes.d ./src/pacientes_test.d ./src/scrum-32.d  agenda_clinica
+ 
+16:57:10 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
+Finished building: ../src/Agenda_test.cpp
+ 
+Building file: ../src/pacientes.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes.d" -MT"src/pacientes.d" -o "src/pacientes.o" "../src/pacientes.cpp"
+Finished building: ../src/pacientes.cpp
+ 
+Building file: ../src/pacientes_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes_test.d" -MT"src/pacientes_test.d" -o "src/pacientes_test.o" "../src/pacientes_test.cpp"
+Finished building: ../src/pacientes_test.cpp
+ 
+Building file: ../src/scrum-32.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/scrum-32.d" -MT"src/scrum-32.d" -o "src/scrum-32.o" "../src/scrum-32.cpp"
+Finished building: ../src/scrum-32.cpp
+ 
+Building target: agenda_clinica
+Invoking: Cross G++ Linker
+g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
+Finished building target: agenda_clinica
+ 

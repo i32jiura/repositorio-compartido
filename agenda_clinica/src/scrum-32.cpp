@@ -7,9 +7,15 @@
 //============================================================================
 
 #include <iostream>
+#include "Agenda.h"
+
 using namespace std;
 
 int main() {
+
+	Agenda agenda;
+
+	agenda.imprimir();
 
 	return 0;
 

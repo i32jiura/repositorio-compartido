@@ -1,5 +1,5 @@
 /*
- * pacientes.cpp
+ * Pacientes.cpp
  *
  *  Created on: 04/12/2014
  *      Author: i32ribaj
@@ -7,44 +7,85 @@
 
 #include "pacientes.h"
 
-pacientes::pacientes() {
+Pacientes::Pacientes() {
 	// TODO Auto-generated constructor stub
-	telefono_ = 0;
+	favorito_ = false;
+	frecuente_ = 0;
 }
 
-const std::string& pacientes::getApellidos() const {
+const std::string& Pacientes::getApellidos() const {
 	return apellidos_;
 }
 
-void pacientes::setApellidos(const std::string& apellidos) {
+void Pacientes::setApellidos(const std::string& apellidos) {
 	apellidos_ = apellidos;
 }
 
-const std::string& pacientes::getDni() const {
+const std::string& Pacientes::getDni() const {
 	return DNI_;
 }
 
-void pacientes::setDni(const std::string& dni) {
+void Pacientes::setDni(const std::string& dni) {
 	DNI_ = dni;
 }
 
-const std::string& pacientes::getNombre() const {
+const std::string& Pacientes::getNombre() const {
 	return nombre_;
 }
 
-void pacientes::setNombre(const std::string& nombre) {
-	nombre_ = nombre;
+bool Pacientes::isFavorito() const {
+	return favorito_;
 }
 
-int pacientes::getTelefono() const {
+void Pacientes::setFavorito(bool favorito) {
+	this->favorito_ = favorito;
+}
+
+int Pacientes::getFrecuente() const {
+	return frecuente_;
+}
+
+void Pacientes::setFrecuente(int frecuente) {
+	this->frecuente_ = frecuente;
+}
+
+const string& Pacientes::getNotas() const {
+	return notas_;
+}
+
+const vector<string>& Pacientes::getCorreos() const {
+	return correos_;
+}
+
+void Pacientes::setCorreos(const vector<string>& correos) {
+	correos_ = correos;
+}
+
+const vector<string>& Pacientes::getRedSocial() const {
+	return redSocial_;
+}
+
+void Pacientes::setRedSocial(const vector<string>& redSocial) {
+	redSocial_ = redSocial;
+}
+
+const vector<string>& Pacientes::getTelefono() const {
 	return telefono_;
 }
 
-void pacientes::setTelefono(int telefono) {
+void Pacientes::setTelefono(const vector<string>& telefono) {
 	telefono_ = telefono;
 }
 
-pacientes::~pacientes() {
+void Pacientes::setNotas(const string& notas) {
+	notas_ = notas;
+}
+
+void Pacientes::setNombre(const std::string& nombre) {
+	nombre_ = nombre;
+}
+
+Pacientes::~Pacientes() {
 	// TODO Auto-generated destructor stub
 }
 
