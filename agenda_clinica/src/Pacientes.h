@@ -22,6 +22,7 @@ private:
 	vector <string> telefono_;
 	vector <string> correos_;
 	string notas_;
+	string direccion_;
 	bool favorito_;
 	int frecuente_;
 	vector <string> redSocial_;
@@ -48,6 +49,8 @@ public:
 	void setRedSocial(const vector<string>& redSocial);
 	const vector<string>& getTelefono() const;
 	void setTelefono(const vector<string>& telefono);
+	const string& getDireccion() const;
+	void setDireccion(const string& direccion);
 };
 
 #endif /* PACIENTES_H_ */

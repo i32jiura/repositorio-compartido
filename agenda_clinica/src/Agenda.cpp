@@ -14,54 +14,128 @@
 #include <list>
 
 
+
 using namespace std;
 
 
 Agenda::Agenda() {
 	// TODO Auto-generated constructor stub
 
+	cargarEnLista();
+
+
+	list<Pacientes>::iterator i;
+
+	for(i=listaContactos_.begin();i != listaContactos_.end();i++) {
+
+			cout << "Lista LAMA -> [" << i->getNombre() << "] , [" << i->getApellidos() << "] , [" << i->getDni() << "]\n";
+		}
+
 }
+
 
 Agenda::~Agenda() {
 	// TODO Auto-generated destructor stub
 }
 
 
+bool ordenar(const Pacientes& p1,const Pacientes& p2){
+
+	return p1.getApellidos() < p2.getApellidos();
+
+}
 
 void Agenda::ordenarFichero() {
 
+
+	cargarEnLista();
+
+	//listaContactos_.sort();
+
+	list<Pacientes>::iterator i;
+
+	for(i=listaContactos_.begin();i != listaContactos_.end();i++) {
+
+				cout << "Lista LAMA -> : " << i->getNombre() << "," << i->getApellidos() << "," << i->getDni() << "," << "\n";
+			}
 
 }
 
 void Agenda::cargarEnLista() {
 
-	string nomfich = "agenda.txt";
-	ifstream entrada (nomfich.c_str());
-	char nombre[20],apellidos[20],DNI[20],telefono[20];
+	ifstream entrada ("Agenda.txt");
+	string nombre,apellidos,DNI,telefono;
+	string telefono1, telefono2,correo1,correo2;
+	string notas;
+	string favorito;
+	string frecuente,direccion;
+	string twitter,facebook;
+
 	Pacientes p;
+	vector <string> auxiliar_;
+
 	listaContactos_.clear();
 	
-	while (entrada.getline(nombre,256,',') ) {
+	while (getline(entrada, DNI, ',' ))
+	{
 	
-		entrada.getline(apellidos,256,',');
-		entrada.getline(DNI,256,',');
-		entrada.getline(telefono,256,'\n');
+		getline(entrada, nombre, ',' );
+		getline(entrada, apellidos, ',' );
+		getline(entrada, direccion, ',' );
+		getline(entrada, telefono1, ',' );
+		getline(entrada, telefono2, ',' );
+		getline(entrada, correo1, ',' );
+		getline(entrada, correo2, ',' );
+		getline(entrada, twitter, ',' );
+		getline(entrada, facebook, ',' );
+		getline(entrada, notas, ',' );
+		getline(entrada, favorito, ',' );
+		getline(entrada, frecuente);
+
+
+		auxiliar_.push_back(telefono1);
+		auxiliar_.push_back(telefono2);
+		p.setTelefono(auxiliar_);
+
+		auxiliar_.push_back(correo1);
+		auxiliar_.push_back(correo2);
+		p.setCorreos(auxiliar_);
+
+		auxiliar_.push_back(twitter);
+		auxiliar_.push_back(facebook);
+		p.setRedSocial(auxiliar_);
+
 		p.setNombre(nombre);
 		p.setApellidos(apellidos);
 		p.setDni(DNI);
-		//p.setTelefono(atoi(telefono));
+		p.setNotas(notas);
+		p.setDireccion(direccion);
+
+		if (favorito.compare("Si") == 0)
+		{
+			p.setFavorito(true);
+		}
+		else
+		{
+			p.setFavorito(false);
+		}
+
+		p.setFrecuente(atoi(frecuente.c_str()));
+
 		listaContactos_.push_back(p);
 	}
+
 	entrada.close();
 }
 
 void Agenda::actualizarFichero() {
 
-	string nomfich = "agenda.txt";
-	ofstream salida(nomfich.c_str(),ios::out);
-	
+	string nomfich = "Agenda.txt";
+	ofstream salida(nomfich.c_str(),ofstream::app);
 	list<Pacientes>::iterator i;
 	
+
+
 	for(i=listaContactos_.begin();i != listaContactos_.end();i++) {
 
 		salida << i->getNombre() << "," << i->getApellidos() << "," << i->getDni() << "," << "\n";
@@ -73,11 +147,15 @@ void Agenda::actualizarFichero() {
 
 void Agenda::introducirPaciente(Pacientes p) {
 
+	listaContactos_.clear();
+
 	cargarEnLista();
 
 	listaContactos_.push_back(p);
 
 	actualizarFichero();
+
+
 }
 
 bool Agenda::borrarPaciente(const std::string& apellidos) {
@@ -184,6 +262,14 @@ void Agenda::importarCopia() {
 	ficheroCopia.close();
 	ficheroAgendaW.close();
 
+}
+
+const list<Pacientes>& Agenda::getListaContactos() const {
+	return listaContactos_;
+}
+
+void Agenda::setListaContactos(const list<Pacientes>& listaContactos) {
+	listaContactos_ = listaContactos;
 }
 
 void Agenda::imprimir() {

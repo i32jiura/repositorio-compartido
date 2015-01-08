@@ -20,6 +20,7 @@ private:
 
 	void cargarEnLista();
 	void actualizarFichero();
+	bool ordenar();
 
 public:
 	Agenda();
@@ -32,7 +33,8 @@ public:
 	bool borrarPaciente(const std::string& apellidos);
 	void importarCopia();
 	void imprimir();
-
+	const list<Pacientes>& getListaContactos() const;
+	void setListaContactos(const list<Pacientes>& listaContactos);
 };
 
 #endif /* AGENDA_H_ */

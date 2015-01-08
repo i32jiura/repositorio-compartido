@@ -1,2 +1,4 @@
-15454679J,Jesus,Rio Barrilero,957313689,jesusriobarrilero@gmail.com,C/ Antonio Arroyo,33, ,1,JesusRio1991,0
-15454680Z,Alvaro,Rio Barrilero,957313690,alvaroriobarrilero@gmail.com,C/ Antonio Arroyo,33, ,1,Alvaro1998,0
+15454679J,vv,Rio Barrilero,C/ Antonio Arroyo 33,664202092,,jesusriobarrilero@gmail.com, , , , notas,si,5
+15454679E,ee,Rio rr,C/ Antonio Arroyo 33,664202092,,jesusriobarrilero@gmail.com, , , , notas,si,5
+15454679G,err,Rio r,C/ Antonio Arroyo 33,664202092,,jesusriobarrilero@gmail.com, , , , notas,si,5
+15454679D,ddd,Rio Barrirlero,C/ Antonio Arroyo 33,664202092,,jesusriobarrilero@gmail.com, , , , notas,si,5

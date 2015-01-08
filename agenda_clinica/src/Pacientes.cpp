@@ -73,6 +73,14 @@ const vector<string>& Pacientes::getTelefono() const {
 	return telefono_;
 }
 
+const string& Pacientes::getDireccion() const {
+	return direccion_;
+}
+
+void Pacientes::setDireccion(const string& direccion) {
+	direccion_ = direccion;
+}
+
 void Pacientes::setTelefono(const vector<string>& telefono) {
 	telefono_ = telefono;
 }
