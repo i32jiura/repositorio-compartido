@@ -1,5 +1,5 @@
-src/Agenda.d: ../src/Agenda.cpp ../src/Agenda.h ../src/pacientes.h
+src/Agenda.d: ../src/Agenda.cpp ../src/Agenda.h ../src/Pacientes.h
 
 ../src/Agenda.h:
 
-../src/pacientes.h:
+../src/Pacientes.h:

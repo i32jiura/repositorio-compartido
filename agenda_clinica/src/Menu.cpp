@@ -1,0 +1,487 @@
+#include <iostream>
+#include <list>
+#include <string>
+#include "Menu.h"
+#include "Agenda.h"
+#include "Pacientes.h"
+#include <cstdlib>
+#include <cstdio>
+
+using namespace std;
+
+void mostrar(list<Pacientes> aux);
+
+
+int main () {
+
+	int opc,modificar,repeticiones;
+	char operacion;
+	string favorito;
+	
+	vector<string> telefonos;
+	vector<string> redesSociales;
+	vector<string> correos;
+	
+	//si no se crea aqui da error
+	list<Pacientes>::iterator i;
+	list<Pacientes>::iterator j;
+	Agenda a;
+	Pacientes p;
+	string cadena,cadena1, cadena2;
+	vector <string> vector;
+	list<Pacientes> aux;
+
+	do {
+	
+		system("clear");
+	
+		cout << "\n ***************************************************";
+		cout << "\n * # Agenda de Pacientes # | Selecciona una opción *";
+		cout << "\n ***************************************************";
+		cout << "\n * 1.-Insertar nuevo paciente                      *";
+		cout << "\n * 2.-Borrar paciente                              *";
+		cout << "\n * 3.-Buscar paciente                              *";
+		cout << "\n * 4.-Modificar paciente                           *";
+		cout << "\n * 5.-Ordenar lista de pacientes                   *";
+		cout << "\n * 6.-Mostrar lista de pacientes                   *";
+		cout << "\n * 7.-Mostrar lista de frencuentes                 *";
+		cout << "\n * 8.-Mostrar lista de favoritos                   *";
+		cout << "\n * 9.-Importar copia de seguridad                  *";
+		cout << "\n * 10.-Exportar copia de seguridad                 *";
+		cout << "\n * 11.-Imprimir                                    *"; 	
+		cout << "\n * 0.-Salir de la aplicación                       *";
+		cout << "\n ***************************************************\n >> ";
+		cin >> opc;
+		getchar();
+		switch(opc) {
+		
+			case 1:
+				cout << "\n # Rellena los siguientes campos para el nuevo cliente:\n";	
+				//getchar();
+
+				do {
+					cout << "\n   * DNI >> ";
+					getline(cin,cadena1);
+					p.setDni(cadena1);
+
+					if(a.buscarDni(cadena1)) {
+
+						cout << "\n # Ya hay una persona con dicho Dni en la agenda, ¿Quieres introducir otra persona? (s/n)\n >> ";						
+						cin >> operacion;
+						getchar();
+					}
+				}while(operacion == 's');	
+
+				if (operacion != 'n') {
+
+					cout << "\n   * Nombre >> ";
+					getline(cin,cadena1);
+					p.setNombre(cadena1);
+	
+					cout << "\n   * Apellidos >> ";
+					getline(cin,cadena1);
+					p.setApellidos(cadena1);
+
+					cout << "\n   * Dirección >> ";
+					getline(cin,cadena1);
+					p.setDireccion(cadena1);
+	
+					cout << "\n   * 1º Teléfono >> ";
+					getline(cin,cadena1);
+
+					cout << "\n   * 2º Teléfono >> ";
+					getline(cin,cadena2);
+
+					vector.push_back(cadena1);
+					vector.push_back(cadena2);
+					p.setTelefono(vector);
+
+					vector.clear();
+
+					cout << "\n   * 1º Correo >> ";
+					getline(cin,cadena1);
+
+					cout << "\n   * 2º Correo >> ";
+					getline(cin,cadena2);
+
+					vector.push_back(cadena1);
+					vector.push_back(cadena2);
+					p.setCorreos(vector);
+
+					vector.clear();
+
+					cout << "\n   * Twitter >> ";
+					getline(cin,cadena1);
+
+					cout << "\n   * Facebook >> ";
+					getline(cin,cadena2);
+
+					vector.push_back(cadena1);
+					vector.push_back(cadena2);
+					p.setRedSocial(vector);
+
+					vector.clear();
+
+					cout << "\n   * Notas >> ";
+					getline(cin,cadena1);
+					p.setNotas(cadena1);
+
+					cout << "\n   * Favorito (si/no) >> ";
+					getline(cin,cadena1);
+
+					if (cadena1.compare("si") == 0) {
+
+						p.setFavorito(true);
+					}else{
+						p.setFavorito(false);
+					}
+				
+					a.introducirPaciente(p);
+
+					cout << "\n # Nuevo cliente añadido con éxito\n # Pulsa Intro para continuar";
+					getchar();
+				}
+				break;
+			case 2:
+				
+				repeticiones=0;
+			
+				cout << "\n # Introduce los apellidos del cliente que deseas borrar\n -> ";
+				getline(cin,cadena1);
+
+				if (a.buscarApellido(cadena1)) {
+
+					aux=a.getListaContactos();
+					for (i=aux.begin(); i!=aux.end() && repeticiones < 2; ++i) {
+
+						if (i->getApellidos().compare(cadena1) == 0) {
+							
+							j=i;
+							repeticiones++;
+						}
+					}
+
+					if (repeticiones == 1) {
+
+						aux.erase(j);
+						a.setListaContactos(aux);
+						cout << "\n # El Paciente con dicho apellido fue borrado con éxito\n";
+					}else{
+						cout << "\n # Hay uno o más pacientes con ese mismo apellido, indica el Dni del que quieres borrar\n >> ";
+						getline(cin,cadena1);
+
+						if (a.buscarDni(cadena1)) {
+
+							for (i=aux.begin(); i!=aux.end() && repeticiones != 1; ++i) {
+
+								if (i->getDni().compare(cadena1) == 0) {
+
+									cout << "\n # El jugador con dicho Dni fue borrado con éxito\n";
+									aux.erase(i);
+									a.setListaContactos(aux);
+									repeticiones = 1;
+								}
+							}
+						}else{
+
+							cout << "\n # No se han encontrado coincidencias en la lista con ese Dni\n";
+						}
+					}
+				}else{
+
+					cout << "\n # No se han encontrado coincidencias en la lista con ese apellido\n";
+				}
+
+				cout<<"\npulse una tecla para continuar\n";
+				getchar();
+
+				break;
+			case 3:
+				
+
+				cout << "\n # Introduce el apellido del paciente que quieres buscar -> ";
+				getline(cin,cadena1);
+
+				if (a.buscarApellido(cadena1)) {
+
+					aux=a.getListaContactos();
+					
+		cout<< "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+	cout << setw(6) << "DNI" << setw(32) << "NOMBRE" << setw(35) << "APELLIDOS"
+			<< setw(55) << "DIRECCION" << setw(35) << "TELEFONO" << setw(55)
+			<< "EMAIL" << setw(55) << "ANOTACIONES" << setw(35) << "FAVORITO"
+			<< setw(35) << "RED SOCIAL\n";
+	cout
+			<< "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+					for (i=aux.begin(); i!=aux.end(); ++i) {
+					// Formateado para mejor visuacizacion
+
+
+						if (i->getApellidos().compare(cadena1) == 0) {
+							i->setFrecuente((i->getFrecuente())+1);
+							correos = i->getCorreos();
+		telefonos = i->getTelefono();
+		redesSociales = i->getRedSocial();
+
+		if (i->isFavorito()) {
+			favorito = "Si";
+		} else {
+			favorito = "No";
+		}
+
+		cout << i->getDni() << setw(29) << i->getNombre() << setw(35)
+				<< i->getApellidos() << setw(55) << i->getDireccion()
+				<< setw(35) << telefonos[0] + "-" + telefonos[1] << setw(75)
+				<< correos[0] + "-" + correos[1] << setw(35) << i->getNotas()
+				<< setw(35) << favorito << setw(35)
+				<< redesSociales[0] + "," + redesSociales[1] << "\n";
+						
+						}
+					}
+					
+					// Formateado para mejor visuacizacion
+	cout
+			<< "\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+				}else {
+					cout << "\n # No se han encontrado coincidencias en la lista con ese apellido\n";
+				}
+				//para que se vea la lista
+				cout<<"\npulse una tecla para continuar\n";
+				getchar();
+				break;
+			case 4:
+				
+				cout << "\n # Introduce el Dni del paciente que quieres modificar -> ";
+				getline(cin,cadena1);
+
+				if (a.buscarDni(cadena1)) {
+
+					aux=a.getListaContactos();
+					for (i=aux.begin(); i != aux.end(); ++i) {
+
+						if (i->getDni().compare(cadena1) == 0) {
+
+							//p=*i;
+							do {
+
+							cout << "\n # Indica el campo que quieres modificar del cliente\n 1.-Dni \n 2.-Nombre \n 3.-Apellidos\n 4.-Dirección\n 5.-1ºTeléfono \n 6.-2ºTeléfono \n 7.-1ºCorreo \n 8.-2ºCorreo \n 9.-Twitter\n 10.-FaceBook\n 11.-Notas \n 12.-Favorito \n 0.-Guardar y salir\n >> ";
+							cin >> modificar;
+							getchar();
+							switch(modificar) {
+
+								case 1:
+									cout << "\n # Introduce el nuevo Dni -> ";
+									getline(cin,cadena1);
+									i->setDni(cadena1);
+									break;
+								case 2:
+									cout << "\n # Introduce el nuevo nombre -> ";
+									getline(cin,cadena1);
+									i->setNombre(cadena1);
+									break;
+								case 3:
+									cout << "\n # Introduce los nuevos apellidos -> ";
+									getline(cin,cadena1);
+									i->setApellidos(cadena1);
+									break;
+								case 4:
+									cout << "\n # Introduce la nueva dirección -> ";
+									getline(cin,cadena1);
+									i->setDireccion(cadena1);
+									break;
+								case 5:
+									cout << "\n # Introduce el nuevo 1º teléfono -> ";
+									getline(cin,cadena1);
+									cadena2 = i->getTelefono()[1];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setTelefono(vector);
+									vector.clear();
+									break;
+								case 6:
+									cout << "\n # Introduce el nuevo 2º teléfono -> ";
+									getline(cin,cadena2);
+									cadena1 = i->getTelefono()[0];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setTelefono(vector);
+									vector.clear();
+									break;
+								case 7:
+									cout << "\n # Introduce el nuevo 1º correo -> ";
+									getline(cin,cadena1);
+									cadena2 = i->getCorreos()[1];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setCorreos(vector);
+									vector.clear();
+									break;
+								case 8:
+									cout << "\n # Introduce el nuevo 2º correo -> ";
+									getline(cin,cadena2);
+									cadena1 = i->getCorreos()[0];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setCorreos(vector);
+									vector.clear();
+									break;
+								case 9:
+									cout << "\n # Introduce el nuevo Twitter -> ";
+									getline(cin,cadena1);
+									cadena2 = i->getRedSocial()[1];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setRedSocial(vector);
+									vector.clear();
+									break;
+								case 10:
+									cout << "\n # Introduce el nuevo FaceBook-> ";
+									getline(cin,cadena2);
+									cadena1 = i->getRedSocial()[0];
+									vector.push_back(cadena1);
+									vector.push_back(cadena2);
+									i->setRedSocial(vector);
+									vector.clear();
+									break;
+								case 11:
+									cout << "\n # Introduce las nuevas notas -> ";
+									getline(cin,cadena1);
+									i->setNotas(cadena1);
+									break;
+								case 12:
+									cout << "\n # Introduce el nuevo Favorito (si/no) -> ";
+									getline(cin,cadena1);
+
+									if (cadena1.compare("si") == 0) {
+
+										i->setFavorito(true);
+									}else{
+										i->setFavorito(false);
+									}	
+									break;
+								}
+							}while(modificar != 0);
+						}
+					}
+					a.setListaContactos(aux);
+					a.actualizarFichero();
+				}else{
+
+					cout << "\n # No se han encontrado coincidencias en la lista con ese apellido\n";
+				}
+				cout<<"\npulse una tecla para continuar\n";
+				getchar();
+				break;
+			case 5:	
+				a.ordenarFichero();
+				break;
+			case 6:		
+					
+				//list<Pacientes>::iterator i;
+				aux=a.getListaContactos();
+				
+				//añadida comprobacion de lista vacia
+				if(aux.empty())
+				{
+					cout<<"no existen pacientes que mostrar\n";
+				}
+				else
+				{		
+				mostrar(aux);
+				}
+				cout<<"\npulse una tecla para continuar\n";
+				
+				getchar();
+				break;
+			case 7:
+
+				a.listarFrecuentes();
+				aux=a.getFav();
+				
+				//añadida comprobacion de lista vacia
+				if(aux.empty())
+				{
+					cout<<"no existen pacientes que mostrar\n";
+				}
+				else
+				{
+				mostrar(aux);
+				}
+				//para que se vea la lista
+				cout<<"\npulse una tecla para continuar\n";
+				
+				getchar();
+				
+				break;
+			case 8:
+
+				a.listarFavoritos();
+
+				aux=a.getFav();
+				
+				//añadida comprobacion de lista vacia
+				if(aux.empty())
+				{
+					cout<<"no existen pacientes que mostrar\n";
+				}
+				else
+				{
+				mostrar(aux);				
+				}
+				
+				cout<<"\npulse una tecla para continuar\n";
+				
+				getchar();
+				
+
+				break;
+			case 9:	
+				
+				cout<<"Introduzca la ruta del archivo a importar\n";
+				getline(cin,cadena);
+				
+				
+				a.importarCopia(cadena);
+				
+				cout<<"\nImportando copia de seguridad\n";
+				cout<<"\n........\n";
+			
+				break;
+			case 10:	
+			
+				cout<<"Introduzca la ruta del fichero a exportar\n";
+				getline(cin,cadena);
+				
+				a.exportarFichero(cadena);
+				
+				break;
+			case 11:
+				a.imprimir();
+				
+				cout<<"\nImpresión terminada,pulse una tecla para continuar\n";
+				getchar();
+				break;	
+				
+			case 0:
+
+				a.actualizarFichero();
+				cout << "\n # Saliendo de la aplicación...\n";
+				break;
+
+			default:
+				cout << "\n # Elige una opción correcta\n # Pulsa Intro para continuar";
+				
+				getchar();
+				break;
+		}
+	    			
+	}while(opc != 0);
+
+
+	return 0;
+}
+
+
+
+
+

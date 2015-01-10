@@ -1,0 +1,63 @@
+// pacientes_unittest.cpp: scrum32
+// A program using Google C++ testing framework.
+//
+
+#include "Pacientes.h"
+#include <vector>
+#include <string>
+#include "../gtest/gtest.h"
+
+TEST(Pacientes, set_get)
+{
+	Pacientes p;
+	vector<string> aux;
+	
+	
+	p.setDni("12345678D");
+	p.setNombre("Manolo");
+	p.setApellidos("Perez Perez");
+	p.setDireccion("C/ Antonio Arroyo 33");
+	
+	aux.push_back("957467234");
+	aux.push_back("555879234");
+	
+	p.setTelefono(aux);
+	aux.clear();
+	
+	aux.push_back("Manoliyo@fakemail.com");
+	aux.push_back(" ");
+	
+	
+	p.setCorreos(aux);
+	
+	
+	
+	p.setNotas("este zeñor es raro");
+	p.setFavorito(true);
+	
+	aux.clear();
+	
+	aux.push_back("ManoloELDelBombo@twitter");
+	aux.push_back(" ");
+	
+	p.setRedSocial(aux);
+	
+	p.setFrecuente(6);
+  	
+
+	EXPECT_EQ("12345678D", p.getDni());
+  	EXPECT_EQ("Manolo", p.getNombre());
+  	EXPECT_EQ("Perez Perez",p.getApellidos());
+  	EXPECT_EQ("C/ Antonio Arroyo 33", p.getDireccion());
+  	EXPECT_EQ("957467234", (p.getTelefono())[0]);
+  	EXPECT_EQ("555879234", (p.getTelefono())[1]);
+  	EXPECT_EQ("Manoliyo@fakemail.com", (p.getCorreos())[0]);
+  	EXPECT_EQ(" ", (p.getCorreos())[1]);
+  	EXPECT_EQ("este zeñor es raro", p.getNotas());
+  	EXPECT_TRUE(p.isFavorito());
+  	EXPECT_EQ("ManoloELDelBombo@twitter", (p.getRedSocial())[0]);
+  	EXPECT_EQ(" ", (p.getRedSocial())[1]);
+  	EXPECT_EQ(6, p.getFrecuente());
+
+}
+

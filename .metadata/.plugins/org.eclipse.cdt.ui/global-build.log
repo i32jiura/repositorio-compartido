@@ -123,3 +123,894 @@ Invoking: Cross G++ Linker
 g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
 Finished building target: agenda_clinica
  
+17:05:53 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
+Finished building: ../src/Agenda_test.cpp
+ 
+Building file: ../src/pacientes.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes.d" -MT"src/pacientes.d" -o "src/pacientes.o" "../src/pacientes.cpp"
+Finished building: ../src/pacientes.cpp
+ 
+Building file: ../src/pacientes_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes_test.d" -MT"src/pacientes_test.d" -o "src/pacientes_test.o" "../src/pacientes_test.cpp"
+Finished building: ../src/pacientes_test.cpp
+ 
+Building file: ../src/scrum-32.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/scrum-32.d" -MT"src/scrum-32.d" -o "src/scrum-32.o" "../src/scrum-32.cpp"
+Finished building: ../src/scrum-32.cpp
+ 
+Building target: agenda_clinica
+Invoking: Cross G++ Linker
+g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
+Finished building target: agenda_clinica
+ 
+17:06:56 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: No se hace nada para `all'.
+12:09:07 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: No se hace nada para `all'.
+23:10:16 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building target: agenda_clinica
+Invoking: Cross G++ Linker
+g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/Menu.o ./src/Pacientes.o ./src/Pacientes_test.o   
+Finished building target: agenda_clinica
+ 
+23:14:38 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::imprimir()’:
+../src/Agenda.cpp:284:2: error: ‘ficheroAgendaR’ no se declaró en este ámbito
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:286:1: error fatal: error al cerrar /tmp/ccX6jfxv.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:15:14 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:284:1: error fatal: error al escribir a /tmp/cclOPL4z.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:15:35 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:284:1: error fatal: error al escribir a /tmp/ccy29Ra2.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:16:08 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/Menu.o ./src/Pacientes.o ./src/Pacientes_test.o  ./src/Agenda.d ./src/Agenda_test.d ./src/Menu.d ./src/Pacientes.d ./src/Pacientes_test.d  agenda_clinica
+ 
+23:16:10 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:284:1: error fatal: error al escribir a /tmp/ccB5wToV.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:18:58 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:284:1: error fatal: error al escribir a /tmp/ccr3skUP.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:20:00 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/Menu.o ./src/Pacientes.o ./src/Pacientes_test.o  ./src/Agenda.d ./src/Agenda_test.d ./src/Menu.d ./src/Pacientes.d ./src/Pacientes_test.d  agenda_clinica
+ 
+23:20:03 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:277:1: error fatal: error al escribir a /tmp/cckEbL4r.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:20:14 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::imprimir()’:
+../src/Agenda.cpp:274:289: error: expected ‘}’ at end of input
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:274:289: error fatal: error al cerrar /tmp/ccW4HJcN.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:20:28 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:278:1: error: expected declaration before ‘}’ token
+../src/Agenda.cpp:278:1: error fatal: error al cerrar /tmp/cc6uSfBK.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:21:09 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:276:1: error fatal: error al escribir a /tmp/ccnCzrCa.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:21:34 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::imprimir()’:
+../src/Agenda.cpp:286:6: error: ‘i’ no se declaró en este ámbito
+../src/Agenda.cpp:288:4: error: ‘salida’ no se declaró en este ámbito
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:297:1: error fatal: error al cerrar /tmp/cc8p6tJR.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:21:43 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:308:1: error fatal: error al escribir a /tmp/ccUoqTm0.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:23:42 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:276:1: error fatal: error al escribir a /tmp/cc055qf4.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:26:37 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:276:1: error fatal: error al escribir a /tmp/ccoFux7a.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:31:51 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:276:1: error fatal: error al escribir a /tmp/ccZ9czdb.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:32:50 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_test.o ./src/Menu.o ./src/Pacientes.o ./src/Pacientes_test.o  ./src/Agenda.d ./src/Agenda_test.d ./src/Menu.d ./src/Pacientes.d ./src/Pacientes_test.d  agenda_clinica
+ 
+23:32:52 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:276:1: error fatal: error al escribir a /tmp/ccsalSJh.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+23:53:03 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::importarCopia()’:
+../src/Agenda.cpp:207:54: error: no hay una función coincidente para la llamada a ‘getline(const char*, const string&, char)’
+../src/Agenda.cpp:207:54: nota: los candidatos son:
+In file included from /usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/cstdio:44:0,
+                 from /usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/fstream:43,
+                 from ../src/Agenda.cpp:9:
+/usr/local/include/stdio.h:678:20: nota: __ssize_t getline(char**, size_t*, FILE*)
+/usr/local/include/stdio.h:678:20: nota:   no hay una conversión conocida para el argumento 1 de ‘const char*’ a ‘char**’
+In file included from /usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string:54:0,
+                 from ../src/Pacientes.h:11,
+                 from ../src/Agenda.h:12,
+                 from ../src/Agenda.cpp:8:
+/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h:2792:5: nota: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&)
+/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.h:2792:5: nota:   falló la deducción/sustitución del argumento de plantilla:
+../src/Agenda.cpp:207:54: nota:   no coinciden los tipos ‘std::basic_istream<_CharT, _Traits>’ y ‘const char*’
+In file included from /usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/string:55:0,
+                 from ../src/Pacientes.h:11,
+                 from ../src/Agenda.h:12,
+                 from ../src/Agenda.cpp:8:
+/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc:1070:5: nota: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/bits/basic_string.tcc:1070:5: nota:   falló la deducción/sustitución del argumento de plantilla:
+../src/Agenda.cpp:207:54: nota:   no coinciden los tipos ‘std::basic_istream<_CharT, _Traits>’ y ‘const char*’
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:239:1: error fatal: error al cerrar /tmp/ccUQScNY.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:06:14 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::importarCopia()’:
+../src/Agenda.cpp:179:15: error: el agregado ‘std::stringstream stream’ tiene un tipo incompleto y no se puede definir
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:243:1: error fatal: error al cerrar /tmp/ccgaBAii.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:10:17 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::importarCopia()’:
+../src/Agenda.cpp:203:33: error: la variable ‘std::stringstream stream’ tiene inicializador pero de tipo de dato incompleto
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:243:1: error fatal: error al cerrar /tmp/ccmaBFWU.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:13:13 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/ccQkrtfz.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:13:41 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/ccFqVZAM.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:13:50 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/ccNtvlpB.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:15:42 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp: En la función miembro ‘void Agenda::imprimir()’:
+../src/Agenda.cpp:228:1: error: expected ‘;’ before ‘}’ token
+../src/Agenda.cpp: En el ámbito global:
+../src/Agenda.cpp:228:1: error fatal: error al cerrar /tmp/ccad3BJ8.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:17:04 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/ccGSG6hh.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:19:21 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/ccqpEBTR.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+00:20:27 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+../src/Agenda.cpp:242:1: error fatal: error al escribir a /tmp/cc68pnn1.s: No queda espacio en el dispositivo
+compilación terminada.
+make: *** [src/Agenda.o] Error 1
+20:31:35 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+In file included from ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:38:0:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.h:40:2: aviso: #import es una extensión de GCC obsoleta [-Wdeprecated]
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc: En la función miembro ‘void Widget::GetCharPtrValue(char*, size_t) const’:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ no se declaró en este ámbito
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o] Error 1
+20:32:31 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+In file included from ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:38:0:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.h:40:2: aviso: #import es una extensión de GCC obsoleta [-Wdeprecated]
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc: En la función miembro ‘void Widget::GetCharPtrValue(char*, size_t) const’:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ no se declaró en este ámbito
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o] Error 1
+20:33:27 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc: En la función miembro ‘void Widget::GetCharPtrValue(char*, size_t) const’:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ no se declaró en este ámbito
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o] Error 1
+20:33:55 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc: En la función miembro ‘void Widget::GetCharPtrValue(char*, size_t) const’:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:60:43: error: ‘strcpy’ no se declaró en este ámbito
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o] Error 1
+20:34:21 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+Finished building: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+ 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc"
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc:39:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o] Error 1
+20:38:04 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `src/gtest-1.7.0/test/gtest-death-test_ex_test.o', necesario para `agenda_clinica'.  Alto.
+20:38:58 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest/xcode/Samples/FrameworkSample/widget.o" "../src/gtest/xcode/Samples/FrameworkSample/widget.cc"
+Finished building: ../src/gtest/xcode/Samples/FrameworkSample/widget.cc
+ 
+Building file: ../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest/xcode/Samples/FrameworkSample/widget_test.d" -MT"src/gtest/xcode/Samples/FrameworkSample/widget_test.d" -o "src/gtest/xcode/Samples/FrameworkSample/widget_test.o" "../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc"
+../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc:39:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/gtest/xcode/Samples/FrameworkSample/widget_test.o] Error 1
+21:04:21 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest/xcode/Samples/FrameworkSample/widget_test.d" -MT"src/gtest/xcode/Samples/FrameworkSample/widget_test.d" -o "src/gtest/xcode/Samples/FrameworkSample/widget_test.o" "../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc"
+../src/gtest/xcode/Samples/FrameworkSample/widget_test.cc:39:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/gtest/xcode/Samples/FrameworkSample/widget_test.o] Error 1
+21:06:48 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -MT"src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d" -o "src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o" "../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc"
+In file included from ../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:38:0:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.h:40:2: aviso: #import es una extensión de GCC obsoleta [-Wdeprecated]
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc: En la función miembro ‘void Widget::GetCharPtrValue(char*, size_t) const’:
+../src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.cc:60:44: error: ‘strncpy’ no se declaró en este ámbito
+make: *** [src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o] Error 1
+21:08:20 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o ./src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o  ./src/gtest-1.7.0/test/gtest-death-test_ex_test.o ./src/gtest-1.7.0/test/gtest-death-test_test.o ./src/gtest-1.7.0/test/gtest-filepath_test.o ./src/gtest-1.7.0/test/gtest-linked_ptr_test.o ./src/gtest-1.7.0/test/gtest-listener_test.o ./src/gtest-1.7.0/test/gtest-message_test.o ./src/gtest-1.7.0/test/gtest-options_test.o ./src/gtest-1.7.0/test/gtest-param-test2_test.o ./src/gtest-1.7.0/test/gtest-param-test_test.o ./src/gtest-1.7.0/test/gtest-port_test.o ./src/gtest-1.7.0/test/gtest-printers_test.o ./src/gtest-1.7.0/test/gtest-test-part_test.o ./src/gtest-1.7.0/test/gtest-tuple_test.o ./src/gtest-1.7.0/test/gtest-typed-test2_test.o ./src/gtest-1.7.0/test/gtest-typed-test_test.o ./src/gtest-1.7.0/test/gtest-unittest-api_test.o ./src/gtest-1.7.0/test/gtest_all_test.o ./src/gtest-1.7.0/test/gtest_break_on_failure_unittest_.o ./src/gtest-1.7.0/test/gtest_catch_exceptions_test_.o ./src/gtest-1.7.0/test/gtest_color_test_.o ./src/gtest-1.7.0/test/gtest_env_var_test_.o ./src/gtest-1.7.0/test/gtest_environment_test.o ./src/gtest-1.7.0/test/gtest_filter_unittest_.o ./src/gtest-1.7.0/test/gtest_help_test_.o ./src/gtest-1.7.0/test/gtest_list_tests_unittest_.o ./src/gtest-1.7.0/test/gtest_main_unittest.o ./src/gtest-1.7.0/test/gtest_no_test_unittest.o ./src/gtest-1.7.0/test/gtest_output_test_.o ./src/gtest-1.7.0/test/gtest_pred_impl_unittest.o ./src/gtest-1.7.0/test/gtest_premature_exit_test.o ./src/gtest-1.7.0/test/gtest_prod_test.o ./src/gtest-1.7.0/test/gtest_repeat_test.o ./src/gtest-1.7.0/test/gtest_shuffle_test_.o ./src/gtest-1.7.0/test/gtest_sole_header_test.o ./src/gtest-1.7.0/test/gtest_stress_test.o ./src/gtest-1.7.0/test/gtest_throw_on_failure_ex_test.o ./src/gtest-1.7.0/test/gtest_throw_on_failure_test_.o ./src/gtest-1.7.0/test/gtest_uninitialized_test_.o ./src/gtest-1.7.0/test/gtest_unittest.o ./src/gtest-1.7.0/test/gtest_xml_outfile1_test_.o ./src/gtest-1.7.0/test/gtest_xml_outfile2_test_.o ./src/gtest-1.7.0/test/gtest_xml_output_unittest_.o ./src/gtest-1.7.0/test/production.o  ./src/gtest-1.7.0/src/gtest-all.o ./src/gtest-1.7.0/src/gtest-death-test.o ./src/gtest-1.7.0/src/gtest-filepath.o ./src/gtest-1.7.0/src/gtest-port.o ./src/gtest-1.7.0/src/gtest-printers.o ./src/gtest-1.7.0/src/gtest-test-part.o ./src/gtest-1.7.0/src/gtest-typed-test.o ./src/gtest-1.7.0/src/gtest.o ./src/gtest-1.7.0/src/gtest_main.o  ./src/gtest-1.7.0/samples/sample1.o ./src/gtest-1.7.0/samples/sample10_unittest.o ./src/gtest-1.7.0/samples/sample1_unittest.o ./src/gtest-1.7.0/samples/sample2.o ./src/gtest-1.7.0/samples/sample2_unittest.o ./src/gtest-1.7.0/samples/sample3_unittest.o ./src/gtest-1.7.0/samples/sample4.o ./src/gtest-1.7.0/samples/sample4_unittest.o ./src/gtest-1.7.0/samples/sample5_unittest.o ./src/gtest-1.7.0/samples/sample6_unittest.o ./src/gtest-1.7.0/samples/sample7_unittest.o ./src/gtest-1.7.0/samples/sample8_unittest.o ./src/gtest-1.7.0/samples/sample9_unittest.o  ./src/gtest-1.7.0/fused-src/gtest/gtest-all.o ./src/gtest-1.7.0/fused-src/gtest/gtest_main.o  ./src/gtest-1.7.0/codegear/gtest_all.o ./src/gtest-1.7.0/codegear/gtest_link.o  ./src/Agenda.o ./src/Agenda_test.o ./src/Agenda_unittest.o ./src/Menu.o ./src/Pacientes.o ./src/Pacientes_test.o ./src/pacientes_unittest.o  ./src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.d ./src/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.d  ./src/gtest-1.7.0/test/gtest-death-test_ex_test.d ./src/gtest-1.7.0/test/gtest-death-test_test.d ./src/gtest-1.7.0/test/gtest-filepath_test.d ./src/gtest-1.7.0/test/gtest-linked_ptr_test.d ./src/gtest-1.7.0/test/gtest-listener_test.d ./src/gtest-1.7.0/test/gtest-message_test.d ./src/gtest-1.7.0/test/gtest-options_test.d ./src/gtest-1.7.0/test/gtest-param-test2_test.d ./src/gtest-1.7.0/test/gtest-param-test_test.d ./src/gtest-1.7.0/test/gtest-port_test.d ./src/gtest-1.7.0/test/gtest-printers_test.d ./src/gtest-1.7.0/test/gtest-test-part_test.d ./src/gtest-1.7.0/test/gtest-tuple_test.d ./src/gtest-1.7.0/test/gtest-typed-test2_test.d ./src/gtest-1.7.0/test/gtest-typed-test_test.d ./src/gtest-1.7.0/test/gtest-unittest-api_test.d ./src/gtest-1.7.0/test/gtest_all_test.d ./src/gtest-1.7.0/test/gtest_break_on_failure_unittest_.d ./src/gtest-1.7.0/test/gtest_catch_exceptions_test_.d ./src/gtest-1.7.0/test/gtest_color_test_.d ./src/gtest-1.7.0/test/gtest_env_var_test_.d ./src/gtest-1.7.0/test/gtest_environment_test.d ./src/gtest-1.7.0/test/gtest_filter_unittest_.d ./src/gtest-1.7.0/test/gtest_help_test_.d ./src/gtest-1.7.0/test/gtest_list_tests_unittest_.d ./src/gtest-1.7.0/test/gtest_main_unittest.d ./src/gtest-1.7.0/test/gtest_no_test_unittest.d ./src/gtest-1.7.0/test/gtest_output_test_.d ./src/gtest-1.7.0/test/gtest_pred_impl_unittest.d ./src/gtest-1.7.0/test/gtest_premature_exit_test.d ./src/gtest-1.7.0/test/gtest_prod_test.d ./src/gtest-1.7.0/test/gtest_repeat_test.d ./src/gtest-1.7.0/test/gtest_shuffle_test_.d ./src/gtest-1.7.0/test/gtest_sole_header_test.d ./src/gtest-1.7.0/test/gtest_stress_test.d ./src/gtest-1.7.0/test/gtest_throw_on_failure_ex_test.d ./src/gtest-1.7.0/test/gtest_throw_on_failure_test_.d ./src/gtest-1.7.0/test/gtest_uninitialized_test_.d ./src/gtest-1.7.0/test/gtest_unittest.d ./src/gtest-1.7.0/test/gtest_xml_outfile1_test_.d ./src/gtest-1.7.0/test/gtest_xml_outfile2_test_.d ./src/gtest-1.7.0/test/gtest_xml_output_unittest_.d ./src/gtest-1.7.0/test/production.d  ./src/gtest-1.7.0/src/gtest-all.d ./src/gtest-1.7.0/src/gtest-death-test.d ./src/gtest-1.7.0/src/gtest-filepath.d ./src/gtest-1.7.0/src/gtest-port.d ./src/gtest-1.7.0/src/gtest-printers.d ./src/gtest-1.7.0/src/gtest-test-part.d ./src/gtest-1.7.0/src/gtest-typed-test.d ./src/gtest-1.7.0/src/gtest.d ./src/gtest-1.7.0/src/gtest_main.d  ./src/gtest-1.7.0/samples/sample1.d ./src/gtest-1.7.0/samples/sample10_unittest.d ./src/gtest-1.7.0/samples/sample1_unittest.d ./src/gtest-1.7.0/samples/sample2.d ./src/gtest-1.7.0/samples/sample2_unittest.d ./src/gtest-1.7.0/samples/sample3_unittest.d ./src/gtest-1.7.0/samples/sample4.d ./src/gtest-1.7.0/samples/sample4_unittest.d ./src/gtest-1.7.0/samples/sample5_unittest.d ./src/gtest-1.7.0/samples/sample6_unittest.d ./src/gtest-1.7.0/samples/sample7_unittest.d ./src/gtest-1.7.0/samples/sample8_unittest.d ./src/gtest-1.7.0/samples/sample9_unittest.d  ./src/gtest-1.7.0/fused-src/gtest/gtest-all.d ./src/gtest-1.7.0/fused-src/gtest/gtest_main.d  ./src/gtest-1.7.0/codegear/gtest_all.d ./src/gtest-1.7.0/codegear/gtest_link.d  ./src/Agenda.d ./src/Agenda_test.d ./src/Agenda_unittest.d ./src/Menu.d ./src/Pacientes.d ./src/Pacientes_test.d ./src/pacientes_unittest.d  agenda_clinica
+ 
+21:08:21 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_test.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
+Finished building: ../src/Agenda_test.cpp
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:09:35 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:28: error fatal: ../gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:10:37 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:12:08 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:43: error fatal: gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:13:20 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.9/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:13:40 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:14:37 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:43: error fatal: gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:15:03 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.9/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:15:25 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:17:04 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:19:06 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:19:33 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:19:45 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:66: error fatal: ../gtest-1.7.0/include/gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:20:20 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:43: error fatal: gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:20:53 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:43: error fatal: gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:21:52 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+In file included from ../src/Agenda_unittest.cpp:9:0:
+../src/../gtest-1.7.0/include/gtest/gtest.h:58:43: error fatal: gtest/internal/gtest-internal.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:23:51 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:25:07 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:11:14: error: ‘BuscarDni’ no se ha declarado
+../src/Agenda_unittest.cpp:11:23: error: ISO C++ prohíbe la declaración de ‘TEST’ sin tipo [-fpermissive]
+../src/Agenda_unittest.cpp: En la función ‘int TEST(Agenda, int)’:
+../src/Agenda_unittest.cpp:20:40: error: ‘EXPECT_TRUE’ no se declaró en este ámbito
+../src/Agenda_unittest.cpp:21:41: error: ‘EXPECT_FALSE’ no se declaró en este ámbito
+../src/Agenda_unittest.cpp:32:1: aviso: no hay una declaración de devolución en la función que no devuelve void [-Wreturn-type]
+../src/Agenda_unittest.cpp: En el ámbito global:
+../src/Agenda_unittest.cpp:34:14: error: ‘buscarApellido’ no se ha declarado
+../src/Agenda_unittest.cpp:34:28: error: ISO C++ prohíbe la declaración de ‘TEST’ sin tipo [-fpermissive]
+../src/Agenda_unittest.cpp: En la función ‘int TEST(Agenda, int)’:
+../src/Agenda_unittest.cpp:34:1: error: redefinición de ‘int TEST(Agenda, int)’
+../src/Agenda_unittest.cpp:11:1: error: se define ‘int TEST(Agenda, int)’ previamente aquí
+../src/Agenda_unittest.cpp:43:47: error: ‘EXPECT_TRUE’ no se declaró en este ámbito
+../src/Agenda_unittest.cpp:44:46: error: ‘EXPECT_FALSE’ no se declaró en este ámbito
+../src/Agenda_unittest.cpp:54:1: aviso: no hay una declaración de devolución en la función que no devuelve void [-Wreturn-type]
+make: *** [src/Agenda_unittest.o] Error 1
+21:25:21 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:27:37 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:27:55 **** Clean-only build of configuration Debug for project agenda_clinica ****
+make clean 
+rm -rf  ./src/Agenda.o ./src/Agenda_unittest.o ./src/Menu.o ./src/Pacientes.o ./src/pacientes_unittest.o  ./src/Agenda.d ./src/Agenda_unittest.d ./src/Menu.d ./src/Pacientes.d ./src/pacientes_unittest.d  agenda_clinica
+ 
+21:28:05 **** Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
+Finished building: ../src/Agenda.cpp
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:28:13 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:29:19 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make pre-build main-build 
+make Makefile
+make[1]: se ingresa al directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+make[1]: se sale del directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+make[1]: *** No hay ninguna regla para construir el objetivo `Makefile'.  Alto.
+ 
+make: [pre-build] Error 2 (no tiene efecto)
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:31:00 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make pre-build main-build 
+make makefile
+make[1]: se ingresa al directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+make[1]: No se hace nada para `makefile'.
+make[1]: se sale del directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:31:47 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make pre-build main-build 
+make makefile
+make[1]: se ingresa al directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+make[1]: No se hace nada para `makefile'.
+make[1]: se sale del directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:33:10 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make pre-build main-build 
+mak
+make: mak: No se encontró el programa
+make: [pre-build] Error 127 (no tiene efecto)
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:33:56 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make pre-build main-build 
+make all
+make[1]: se ingresa al directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+make[1]: se sale del directorio `/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/Debug'
+compilación terminada.
+ 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+make[1]: *** [src/Agenda_unittest.o] Error 1
+make: [pre-build] Error 2 (no tiene efecto)
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:38:06 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:39:19 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+Building file: ../src/Agenda_unittest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_unittest.d" -MT"src/Agenda_unittest.d" -o "src/Agenda_unittest.o" "../src/Agenda_unittest.cpp"
+../src/Agenda_unittest.cpp:9:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [src/Agenda_unittest.o] Error 1
+21:39:46 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:40:18 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:40:26 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:41:02 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:41:06 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:41:47 **** Incremental Build of configuration Release for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:41:59 **** Incremental Build of configuration Release for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:42:18 **** Incremental Build of configuration Release for project agenda_clinica ****
+make all 
+make: *** No hay ninguna regla para construir el objetivo `pacientes_unittest.cpp', necesario para `pacientes_unittest.o'.  Alto.
+21:42:59 **** Incremental Build of configuration Release for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+pacientes_unittest.cpp:8:25: error fatal: gtest/gtest.h: No existe el fichero o el directorio
+compilación terminada.
+make: *** [pacientes_unittest.o] Error 1
+21:45:34 **** Incremental Build of configuration Release for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+21:45:50 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+21:46:23 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+21:48:30 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+21:49:55 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+22:02:29 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
+22:02:49 **** Incremental Build of configuration Debug for project agenda_clinica ****
+make all 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1

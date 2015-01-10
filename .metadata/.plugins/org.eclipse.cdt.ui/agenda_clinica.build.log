@@ -1,35 +1,26 @@
-16:57:10 **** Build of configuration Debug for project agenda_clinica ****
+22:02:49 **** Incremental Build of configuration Debug for project agenda_clinica ****
 make all 
-Building file: ../src/Agenda.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda.d" -MT"src/Agenda.d" -o "src/Agenda.o" "../src/Agenda.cpp"
-Finished building: ../src/Agenda.cpp
- 
-Building file: ../src/Agenda_test.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Agenda_test.d" -MT"src/Agenda_test.d" -o "src/Agenda_test.o" "../src/Agenda_test.cpp"
-Finished building: ../src/Agenda_test.cpp
- 
-Building file: ../src/pacientes.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes.d" -MT"src/pacientes.d" -o "src/pacientes.o" "../src/pacientes.cpp"
-Finished building: ../src/pacientes.cpp
- 
-Building file: ../src/pacientes_test.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pacientes_test.d" -MT"src/pacientes_test.d" -o "src/pacientes_test.o" "../src/pacientes_test.cpp"
-Finished building: ../src/pacientes_test.cpp
- 
-Building file: ../src/scrum-32.cpp
-Invoking: Cross G++ Compiler
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/scrum-32.d" -MT"src/scrum-32.d" -o "src/scrum-32.o" "../src/scrum-32.cpp"
-Finished building: ../src/scrum-32.cpp
- 
-Building target: agenda_clinica
-Invoking: Cross G++ Linker
-g++  -o "agenda_clinica"  ./src/Agenda.o ./src/Agenda_test.o ./src/pacientes.o ./src/pacientes_test.o ./src/scrum-32.o   
-Finished building target: agenda_clinica
- 
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o pacientes_unittest.o pacientes_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Pacientes.o Pacientes.cpp
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest-all.cc
+In file included from ../gtest-1.7.0/src/gtest-all.cc:42:0:
+../gtest-1.7.0/src/gtest.cc:370:12: aviso: falta el inicializador para el miembro ‘testing::internal::MutexBase::owner_’ [-Wmissing-field-initializers]
+g++ -isystem ../gtest-1.7.0/include -I../gtest-1.7.0 -g -Wall -Wextra -pthread -c \
+            ../gtest-1.7.0/src/gtest_main.cc
+ar rv gtest_main.a gtest-all.o gtest_main.o
+ar: creando gtest_main.a
+a - gtest-all.o
+a - gtest_main.o
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread pacientes_unittest.o Pacientes.o gtest_main.a -o pacientes_unittest
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda_unittest.o Agenda_unittest.cpp
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Agenda.o Agenda.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Agenda_unittest.o Pacientes.o Agenda.o gtest_main.a -o Agenda_unittest	
+g++ -g -Wall -Wextra -pthread -isystem ../gtest-1.7.0/include  -c -o Menu.o Menu.cpp
+g++ -isystem ../gtest-1.7.0/include -g -Wall -Wextra -pthread Menu.o Pacientes.o Agenda.o -o Menu.exe
+rm *.o 	*.a *~
+rm: cannot remove `*~': No such file or directory
+make: *** [clean1] Error 1
 
-16:57:12 Build Finished (took 1s.463ms)
+22:02:57 Build Finished (took 8s.285ms)
 

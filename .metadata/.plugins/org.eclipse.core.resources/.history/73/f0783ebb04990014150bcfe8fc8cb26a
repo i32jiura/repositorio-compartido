@@ -1,0 +1,62 @@
+// pacientes_unittest.cpp: scrum32
+// A program using Google C++ testing framework.
+//
+
+#include "Pacientes.h"
+#include "Agenda.h"
+#include <vector>
+#include <string>
+#include "../gtest/gtest.h"
+
+TEST(Agenda, BuscarDni)
+{
+	Agenda a;
+	
+	
+	
+  	
+
+	
+  	EXPECT_TRUE(a.buscarDni("26966491A"));
+  	EXPECT_FALSE(a.buscarDni("269r6t91A"));
+  	EXPECT_TRUE(a.buscarDni("82523934C"));
+  	EXPECT_TRUE(a.buscarDni("21392392C"));
+  	EXPECT_TRUE(a.buscarDni("87236284A"));
+  	EXPECT_FALSE(a.buscarDni("26wuet491A"));
+  	EXPECT_TRUE(a.buscarDni("34294232B"));
+  	EXPECT_TRUE(a.buscarDni("82364283B"));
+  	EXPECT_FALSE(a.buscarDni("269egrtf91A"));
+  	EXPECT_TRUE(a.buscarDni("32742632D"));
+  	EXPECT_FALSE(a.buscarDni("26966ehryA"));
+
+}
+
+TEST(Agenda, buscarApellido)
+{
+	Agenda a;
+	
+	
+	
+  	
+
+	
+  	EXPECT_TRUE(a.buscarApellido("Gómez Pino"));
+  	EXPECT_FALSE(a.buscarApellido("269r6t91A"));
+  	EXPECT_TRUE(a.buscarApellido("Pérez Rubalcaba"));
+  	EXPECT_FALSE(a.buscarApellido("269weert91A"));
+  	EXPECT_TRUE(a.buscarApellido("Sanchez Monedero"));
+  	EXPECT_FALSE(a.buscarApellido("mamaaaaaA"));
+  	EXPECT_TRUE(a.buscarApellido("Strife"));
+  	EXPECT_FALSE(a.buscarApellido("2raro raro"));
+  	EXPECT_TRUE(a.buscarApellido("Poronga"));
+  	EXPECT_FALSE(a.buscarApellido("wiiiiiiii"));
+
+}
+
+
+
+
+
+
+
+

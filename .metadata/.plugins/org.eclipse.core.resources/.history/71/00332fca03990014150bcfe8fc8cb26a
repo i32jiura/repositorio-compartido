@@ -1,0 +1,412 @@
+/*
+ * Agenda.cpp
+ *
+ *  Created on: 04/12/2014
+ *      Author: i32ribaj
+ */
+
+#include "Agenda.h"
+#include "Pacientes.h"
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <cstdlib>
+#include <iomanip>
+#include <list>
+
+using namespace std;
+
+Agenda::Agenda() 
+{
+	// Carga la lista al empezar el programa
+	listaContactos_ = cargarEnLista();
+}
+
+Agenda::~Agenda() 
+{
+
+}
+
+bool ordenar(const Pacientes p1, const Pacientes p2) 
+{
+	// Devuelve en orden alfabetico
+	return p1.getApellidos() < p2.getApellidos();
+}
+
+void Agenda::ordenarFichero() 
+{
+	// Ordenamos la lista llamando a la funcion ordenar
+	listaContactos_.sort(ordenar);
+}
+
+list<Pacientes> Agenda::cargarEnLista(string fichero) 
+{
+	// Declaración de una lista auxiliar y el fichero.
+	list<Pacientes> aux;
+	ifstream entrada(fichero.c_str());
+	
+	// Declaración de las variables a utilizar
+	string nombre;
+	string apellidos;
+	string DNI;
+	string telefono;
+	string telefono1;
+	string telefono2;
+	string correo1; 
+	string correo2;
+	string notas;
+	string favorito;
+	string frecuente;
+	string direccion;
+	string twitter;
+	string facebook;
+
+	// Declaración de la clase Paciente y vector auxiliar
+	Pacientes p;
+	vector<string> auxiliar_;
+
+	while (getline(entrada, DNI, ',')) {
+
+		// Obtenemos los datos del archivo
+		getline(entrada, nombre, ',');
+		getline(entrada, apellidos, ',');
+		getline(entrada, direccion, ',');
+		getline(entrada, telefono1, ',');
+		getline(entrada, telefono2, ',');
+		getline(entrada, correo1, ',');
+		getline(entrada, correo2, ',');
+		getline(entrada, twitter, ',');
+		getline(entrada, facebook, ',');
+		getline(entrada, notas, ',');
+		getline(entrada, favorito, ',');
+		getline(entrada, frecuente);
+
+		// Introducimos los telefonos en la clase
+		auxiliar_.push_back(telefono1);
+		auxiliar_.push_back(telefono2);
+		p.setTelefono(auxiliar_);
+
+		auxiliar_.clear();
+
+		// Introducimos los correos en la clase
+		auxiliar_.push_back(correo1);
+		auxiliar_.push_back(correo2);
+		p.setCorreos(auxiliar_);
+
+		auxiliar_.clear();
+
+		// Introducimos twitter y facebook en la clase
+		auxiliar_.push_back(twitter);
+		auxiliar_.push_back(facebook);
+		p.setRedSocial(auxiliar_);
+
+		auxiliar_.clear();
+
+		// Introducimos el nombre en la clase
+		p.setNombre(nombre);
+		
+		// Introducimos los apellidos en la clase
+		p.setApellidos(apellidos);
+		
+		// Introducimos el dni en la clase
+		p.setDni(DNI);
+
+		// Introducimos las notas en la clase
+		p.setNotas(notas);
+		
+		// Introducimos la direccion en la clase
+		p.setDireccion(direccion);
+
+		// Introducimos el favorito en la clase
+		if (favorito.compare("si") == 0) {
+			p.setFavorito(true);
+		} else {
+			p.setFavorito(false);
+		}
+
+		// Introducimos el frecuente en la clase
+		p.setFrecuente(atoi(frecuente.c_str()));
+
+		// Introducimos la clase en la lista
+		aux.push_back(p);
+	}
+
+	// Cerramos el fichero
+	entrada.close();
+
+	// Devolvemos la lista
+	return aux;
+}
+
+void Agenda::actualizarFichero() 
+{
+	// Declaramos el string, archivo y un iterador
+	string favorito;
+	ofstream salida("Agenda.txt");
+	list<Pacientes>::iterator i;
+
+	// Recorremos la lista
+	for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) 
+	{
+		if (i->isFavorito())
+		{
+			favorito = "si";
+		}
+		else
+		{
+			favorito = "no";
+		}
+		salida	<< i->getDni() << "," << i->getNombre() << ","
+				<< i->getApellidos() << "," << i->getDireccion() << ","
+				<< (i->getTelefono())[0] << "," << (i->getTelefono())[1] << ","
+				<< (i->getCorreos())[0] << "," << (i->getCorreos())[1] << ","
+				<< (i->getRedSocial())[0] << "," << (i->getRedSocial())[1]
+				<< "," << i->getNotas() << "," << favorito << ","
+				<< i->getFrecuente() << "\n";
+
+	}
+
+	salida.close();
+}
+
+void Agenda::introducirPaciente(Pacientes p) 
+{
+	listaContactos_.push_back(p);
+
+}
+
+bool Agenda::borrarPaciente(const std::string& apellidos) 
+{
+	// Declaramos el iterador
+	list<Pacientes>::iterator i;
+
+	// Recorremos la lista y borramos por apellido
+	for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) {
+
+		if (apellidos == i->getApellidos()) {
+
+			listaContactos_.erase(i);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+void Agenda::importarCopia(const std::string& rutaArchivo) 
+{
+	// Declaramos 
+	ifstream ficheroCopia;
+	string aux;
+	string aux2;
+	list<Pacientes>::iterator i;
+	list<Pacientes>::iterator j;
+	list<Pacientes> listaContactosAux;
+	Pacientes p;
+	Pacientes pAux;
+	vector<string> telefonos_;
+	vector<string> correos_;
+	vector<string> redesSociales_;
+	bool insert = true;
+
+	// Cargamos la copia de seguridad en una lista auxiliar
+	listaContactosAux = cargarEnLista(rutaArchivo);
+
+	// Recorremos las listas, buscamos duplicados e insertan los que no esten
+	for (i = listaContactosAux.begin(); i != listaContactosAux.end(); i++) {
+		for (j = listaContactos_.begin(); j != listaContactos_.end(); j++) {
+
+			if (i->getDni().compare(j->getDni()) == 0) {
+				insert = false;
+
+			}
+
+		}
+		if (insert) {
+			pAux.setDni(i->getDni());
+			pAux.setNombre(i->getNombre());
+			pAux.setApellidos(i->getApellidos());
+			pAux.setDireccion(i->getDireccion());
+			pAux.setTelefono(i->getTelefono());
+			pAux.setCorreos(i->getCorreos());
+			pAux.setNotas(i->getNotas());
+			pAux.setFavorito(i->isFavorito());
+			pAux.setRedSocial(i->getRedSocial());
+			pAux.setFrecuente(i->getFrecuente());
+
+			listaContactos_.push_back(pAux);
+		}
+		insert = true;
+	}
+
+	actualizarFichero();
+
+}
+
+void Agenda::listarFavoritos() 
+{
+	// Limpiar favoritos
+	fav_.clear();
+
+	//buscar y guardar favoritos en la lista de favoritos.
+	for (std::list<Pacientes>::iterator it = listaContactos_.begin();it != listaContactos_.end(); ++it) 
+	{
+		if (it->isFavorito())
+		{
+			fav_.push_back(*it);
+		}
+	}
+}
+
+void Agenda::listarFrecuentes() 
+{
+	// Limpiar frecuentes
+	fav_.clear();
+
+	// Buscar y guardar frecuentes
+	for (std::list<Pacientes>::iterator it = listaContactos_.begin();it != listaContactos_.end(); ++it) 
+	{
+		if (it->getFrecuente() > 5)
+		{
+			fav_.push_back(*it);
+		}
+	}
+}
+
+//imprime por pantalla por que asi se dijo en practicas,en realidad deberia imprimir un documento en el formato mostrado por pantalla
+void Agenda::imprimir() 
+{
+	// Declaramos vectores y lista
+	list<Pacientes>::iterator i;
+	vector<string> telefonos;
+	vector<string> redesSociales;
+	vector<string> correos;
+	string favorito;
+
+	// Formateado para mejor visuacizacion
+	cout 	<< "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+	cout 	<< setw(6) << "DNI" << setw(32) << "NOMBRE" << setw(35) << "APELLIDOS"
+			<< setw(55) << "DIRECCION" << setw(35) << "TELEFONO" << setw(55)
+			<< "EMAIL" << setw(55) << "ANOTACIONES" << setw(35) << "FAVORITO"
+			<< setw(35) << "RED SOCIAL\n";
+	cout	<< "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+
+	for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) {
+
+		correos = i->getCorreos();
+		telefonos = i->getTelefono();
+		redesSociales = i->getRedSocial();
+
+		if (i->isFavorito()) {
+			favorito = "si";
+		} else {
+			favorito = "no";
+		}
+
+		cout	<< i->getDni() << setw(29) << i->getNombre() << setw(35)
+				<< i->getApellidos() << setw(55) << i->getDireccion()
+				<< setw(35) << telefonos[0] + "-" + telefonos[1] << setw(75)
+				<< correos[0] + "-" + correos[1] << setw(35) << i->getNotas()
+				<< setw(35) << favorito << setw(35)
+				<< redesSociales[0] + "," + redesSociales[1] << "\n";
+
+	}
+
+		// Formateado para mejor visuacizacion
+		cout	<< "\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
+
+}
+
+void Agenda::exportarFichero(const std::string& exportado) 
+{
+	// Declaramos lista, string y archivo
+	list<Pacientes>::iterator i;
+	string favorito;
+	ofstream f;
+
+	f.open(exportado.c_str(), ofstream::out);
+
+	if (!f) 
+	{
+		cout << "Fallo al exportar la lista" << endl;
+	}
+
+	else {
+		for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) {
+
+			if (i->isFavorito())
+			{
+				favorito = "si";
+			}
+			else
+			{
+				favorito = "no";
+			}
+
+			f 	<< i->getDni() << "," << i->getNombre() << ","
+				<< i->getApellidos() << "," << i->getDireccion() << ","
+				<< (i->getTelefono())[0] << "," << (i->getTelefono())[1]
+				<< "," << (i->getCorreos())[0] << ","
+				<< (i->getCorreos())[1] << "," << (i->getRedSocial())[0]
+				<< "," << (i->getRedSocial())[1] << "," << i->getNotas()
+				<< "," << favorito << "," << i->getFrecuente() << "\n";
+		}
+	}
+}
+
+bool Agenda::buscarDni(string dni) 
+{
+	// Declaramos el iterador
+	list<Pacientes>::iterator i;
+
+	for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) {
+
+		if (i->getDni().compare(dni) == 0) {
+
+			return true;
+		} else {
+			return false;
+		}
+	}
+	return false;
+}
+
+bool Agenda::buscarApellido(string apellido) 
+{
+	// Delcramos el iterador
+	list<Pacientes>::iterator i;
+
+	for (i = listaContactos_.begin(); i != listaContactos_.end(); i++) {
+
+		if (i->getApellidos().compare(apellido) == 0) {
+
+			return true;
+		}
+	}
+	return false;
+}
+
+
+//imprime por pantalla por que asi se dijo en practicas,en realidad deberia imprimir un documento en el formato mostrado por pantalla
+
+
+	const list<Pacientes>& Agenda::getFav() const
+	{
+		return fav_;
+	}
+	
+	void Agenda::setFav(const list<Pacientes>& fav)
+	{
+		fav_ = fav;
+	}
+	
+	const list<Pacientes>& Agenda::getListaContactos() const
+	{
+		return listaContactos_;
+	}
+
+	void Agenda::setListaContactos(const list<Pacientes>& listaContactos)
+	{
+		listaContactos_ = listaContactos;
+	}
+

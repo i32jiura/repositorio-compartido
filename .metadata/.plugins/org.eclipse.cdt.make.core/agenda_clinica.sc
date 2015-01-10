@@ -2,6 +2,7 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="cdt.managedbuild.config.gnu.cross.exe.debug.1814317087;cdt.managedbuild.config.gnu.cross.exe.debug.1814317087.;cdt.managedbuild.tool.gnu.cross.c.compiler.1663899901;cdt.managedbuild.tool.gnu.c.compiler.input.989253210">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/gtest-1.7.0"/>
 <includePath path="/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/include"/>
 <includePath path="/usr/local/include"/>
 <includePath path="/usr/local/opt/gcc-4.7.0/include"/>
@@ -228,10 +229,12 @@
 <definedSymbol symbol="unix=1"/>
 <definedSymbol symbol="__ELF__=1"/>
 <definedSymbol symbol="__DECIMAL_BID_FORMAT__=1"/>
+<definedSymbol symbol="_REENTRANT=1"/>
 </collector>
 </instance>
 <instance id="cdt.managedbuild.config.gnu.cross.exe.debug.1814317087;cdt.managedbuild.config.gnu.cross.exe.debug.1814317087.;cdt.managedbuild.tool.gnu.cross.cpp.compiler.412500958;cdt.managedbuild.tool.gnu.cpp.compiler.input.426980684">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="/home/i32ribaj/repositorio-IS/repositorio-compartido/agenda_clinica/gtest-1.7.0"/>
 <includePath path="/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0"/>
 <includePath path="/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/i686-pc-linux-gnu"/>
 <includePath path="/usr/local/opt/gcc-4.7.0/lib/gcc/i686-pc-linux-gnu/4.7.0/../../../../include/c++/4.7.0/backward"/>
@@ -468,6 +471,7 @@
 <definedSymbol symbol="__ELF__=1"/>
 <definedSymbol symbol="__DECIMAL_BID_FORMAT__=1"/>
 <definedSymbol symbol="_GNU_SOURCE=1"/>
+<definedSymbol symbol="_REENTRANT=1"/>
 </collector>
 </instance>
 <instance id="cdt.managedbuild.config.gnu.cross.exe.release.1491646029;cdt.managedbuild.config.gnu.cross.exe.release.1491646029.;cdt.managedbuild.tool.gnu.cross.c.compiler.1836529401;cdt.managedbuild.tool.gnu.c.compiler.input.2045901773">
